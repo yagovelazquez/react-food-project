@@ -1,0 +1,33 @@
+export const FIREBASE_DOMAIN =
+  "https://react-http-bfe6c-default-rtdb.europe-west1.firebasedatabase.app/";
+export const FIREBASE_APIKEY = "AIzaSyDS8_aZokImokyNjjiqrZ91iZu-_t0V0RI";
+
+ export const DUMMY_MEALS = [
+  {
+    id: "m1",
+    name: "Sushi",
+    description: "Finest fish and veggies",
+    price: 22.99,
+  },
+  {
+    id: "m2",
+    name: "Schnitzel",
+    description: "A german specialty!",
+    price: 16.5,
+  },
+  {
+    id: "m3",
+    name: "Barbecue Burger",
+    description: "American, raw, meaty",
+    price: 12.99,
+  },
+  {
+    id: "m4",
+    name: "Green Bowl",
+    description: "Healthy...and green...",
+    price: 18.99,
+  },
+];
+
+
+

@@ -1,0 +1,20 @@
+.header__button {
+  font: inherit;
+  color: #5a1a01;
+  cursor: pointer;
+
+  border: none;
+  background-color: #4d1601;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+
+  padding: 0.75rem 3rem;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 90px;
+}

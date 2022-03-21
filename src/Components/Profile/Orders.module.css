@@ -1,0 +1,127 @@
+.header {
+  background-color: rgba(90, 26, 1, 0.726);
+
+  border-bottom: 1px solid rgba(90, 26, 1, 0.301);
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-collapse: collapse;
+}
+
+.full__table {
+  border-radius: 10px 10px 0 0;
+  border: 1px solid rgb(90, 26, 1);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  margin: 1em auto;
+  margin-top: 0;
+  overflow: hidden;
+  flex-direction: column;
+  border-collapse: collapse;
+}
+
+.table {
+  margin-top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 5px;
+}
+
+.tablehead tr {
+  display: flex;
+  background-color: rgba(90, 26, 1, 0.329);
+
+  flex-direction: row;
+}
+
+.tablehead th {
+  flex-grow: 1;
+  width: 33%;
+}
+
+.table__body {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.table__body tr {
+  display: flex;
+
+  flex-direction: row;
+}
+
+.table__body tr:nth-child(2n) {
+  background-color: rgba(90, 26, 1, 0.137);
+}
+
+.table__body tr:nth-child(2n + 1) {
+  background-color: white;
+}
+
+.table__body td {
+  text-align: center;
+  width: calc(100% / 3);
+}
+
+.table__body td:last-child {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.pagination__span {
+  font-weight: bold;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.actions {
+  display: flex;
+  gap: 0.2rem;
+  margin: 0.2rem;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.actions button {
+  font: inherit;
+  color: #5a1a01;
+  cursor: pointer;
+
+  padding: 0.5rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5a1a01;
+  background-color: #5a1a01;
+  color: white;
+  min-width: 100.2px;
+  margin-left: auto;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ffe6dc;
+}
+
+.full__table .actions button {
+  padding: 0;
+  border-radius: 50%;
+  min-width: 23.2px;
+  font-size: 1rem;
+  margin: 0;
+
+  border: 1px solid #5a1a01;
+  background-color: white;
+  color: #5a1a01;
+}
