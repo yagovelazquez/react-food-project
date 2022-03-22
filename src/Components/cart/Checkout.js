@@ -117,7 +117,7 @@ function Checkout() {
   if (status === "completed" && error) {
     content = (
       <React.Fragment>
-        <h1>Could not get user data, please try again</h1>
+        <h2>Could not get user data, please try again</h2>
         <div className={classes.actions}>
           <button className={classes.submit} onClick={getUserData}>
             Try again

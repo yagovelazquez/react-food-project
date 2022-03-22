@@ -135,7 +135,7 @@ function Orders() {
   };
 
   if (statusOrders === "completed" && !dataOrders && !errorOrders) {
-    content = <h1>You haven't order yet</h1>;
+    content = <h2>You haven't order yet</h2>;
   }
 
   if (
@@ -161,7 +161,7 @@ function Orders() {
     statusOrders === "pending" ||
     (loadAttemptRef.current < 4 && statusOrders === "completed" && errorOrders)
   ) {
-    content = <h1>Loading...</h1>;
+    content = <h2>Loading...</h2>;
   }
 
   if (
@@ -172,7 +172,7 @@ function Orders() {
   ) {
     content = (
       <React.Fragment>
-        <h1>Failed to load your orders, please reload the page</h1>
+        <h2>Failed to load your orders, please reload the page</h2>
         <button onClick={fetchAddressAgain}>Try again</button>
       </React.Fragment>
     );

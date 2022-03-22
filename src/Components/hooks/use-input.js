@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Joi from "joi-browser";
-import classes from "../Auth/LoginForm.module.css";
+import classes from "./use-input.module.css";
 
 const useInput = (schema, nameProperty) => {
   const [value, setValue] = useState("");
@@ -22,7 +22,7 @@ const useInput = (schema, nameProperty) => {
       [nameProperty]: schema[nameProperty],
     };
 
-    const identifier = setTimeout(() => {
+   
       const { error } = Joi.validate(
         { [nameProperty]: value },
         schemaProperty,
@@ -30,11 +30,9 @@ const useInput = (schema, nameProperty) => {
       );
       if (error) setErrorMessage(error.details[0].message);
       else setErrorMessage(null);
-    }, 500);
+    
 
-    return () => {
-      clearTimeout(identifier);
-    };
+
   }, [value, schema, nameProperty, isTouched]);
 
   const blurHandler = (event) => {

@@ -94,10 +94,10 @@ function ChangeName() {
 
   if (dataName && statusName === "completed" && !errorName) {
     localStorage.setItem("name", dataName.displayName);
-    let contenth1 = <h1>Name changed Succesfully</h1>;
+    let contenth1 = <h2>Name changed Succesfully</h2>;
 
     if (!storedName) {
-      contenth1 = <h1>Name added Succesfully</h1>;
+      contenth1 = <h2>Name added Succesfully</h2>;
     }
 
     content = (

@@ -79,7 +79,7 @@ function ChangePassword() {
   if (dataPassword && statusPassword === "completed" && !errorPassword) {
     content = (
       <React.Fragment>
-        <h1>Password Changed Successfully!</h1>
+        <h2>Password Changed Successfully!</h2>
         <div className={classes.actions}>
           <button
             className={`${classes.actions} ${classes.submit}`}

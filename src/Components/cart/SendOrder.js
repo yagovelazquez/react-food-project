@@ -7,6 +7,7 @@ import Modal from "../UI/modal";
 import { useNavigate, useLocation } from "react-router-dom";
 import useHttp from "../hooks/use-http";
 import { orderFood } from "../lib/api";
+import Labels from './Labels';
 
 const retrieveUserId = () => {
   const userId = localStorage.getItem("userId");
@@ -67,24 +68,25 @@ function SendOrder() {
   let content;
 
   if (status === "completed" && !error && data) {
-    content = <h1>Order made successfully</h1>;
+    content = <h2>Order made successfully</h2>;
   }
 
   if (status === "pending") {
-    content = <h1>Sending order...</h1>;
+    content = <h2>Sending order...</h2>;
   }
 
   if (status === "completed" && error) {
-    content = <h1>{error}</h1>;
+    content = <h2>{error}</h2>;
   }
 
   if (status === null && location.state) {
+    const labels = [{label: "City", value: address.city}, {label: "Street", value: address.street}, 
+    {label: "Postal", value: address.postal}, {label: "Total", value: `$ ${cartCtx.totalAmount}`}] 
+   
+   
     content = (
       <React.Fragment>
-        <h2>City: {address.city}</h2>
-        <h2>Street: {address.street}</h2>
-        <h2>Postal: {address.postal}</h2>
-        <h2>Total: $ {cartCtx.totalAmount}</h2>
+        <Labels labels={labels}></Labels>
         <div className={classes.actions}>
           <button className={classes.submit} onClick={orderHandler}>
             Order

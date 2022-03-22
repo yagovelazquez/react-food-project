@@ -1,27 +1,16 @@
-.form {
-  margin: 1rem 0;
-  height: 19rem;
-  overflow: auto;
-  position: relative;
+
+
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
 }
 
-.control {
-  margin-bottom: 0.5rem;
-}
-
-.control label {
+.profile__span {
+  font-size: 2.0rem;
   font-weight: bold;
-  margin-bottom: 0.25rem;
-  display: block;
-  text-align: center;
-}
-
-.control input {
-  font: inherit;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 100%;
+  margin: auto;
 }
 
 .actions {
@@ -73,11 +62,111 @@ button.tryagain__button {
   background-color: #7a2706;
 }
 
-.invalid label {
-  color: #ca3e51;
+.icons {
+  display: flex;
+  flex-wrap: flex;
+  gap: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.invalid {
-  border-color: #aa0b20;
-  background-color: #ffeff1;
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+
+
+.icon__edit,
+.icon__logout,
+.icon__order,
+.icon__password
+{
+  color: #5a1a01;
+  height: 25px;
+  width: 25px;
+}
+
+.icon__address{
+  color: #5a1a01;
+  height: 35px;
+  width: 35px;
+
+}
+
+.icon__edit:hover,
+.icon__logout:hover,
+.icon__order:hover,
+.icon__password:hover {
+  cursor: pointer;
+}
+
+.addressinfo {
+
+  width: 360px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+ 
+  
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+    
+  
+  
+
+}
+
+.address__span {
+  font-size: 1.5rem;
+  font-weight: bold;
+ 
+}
+
+.address__value label,
+.name__value label {
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  
+} 
+
+.address__value span
+ {
+ 
+
+  margin-bottom: 4px;
+
+
+
+} 
+
+
+
+
+.name__value span {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  padding: 0;
+
+}
+
+.name__value {
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.name__value label {
+  margin: 0;
+
+}
+
+

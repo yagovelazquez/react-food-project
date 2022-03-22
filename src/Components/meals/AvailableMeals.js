@@ -35,10 +35,10 @@ function AvailableMeals() {
   return (
     <section className={classes.meals}>
       {status === "completed" && error && attemptRef.current >= 5 && (
-        <h1 className={classes.error}>Could not load the meals</h1>
+        <h2 className={classes.error}>Could not load the meals</h2>
       )}
       {storagedmeals.length === 0 && attemptRef.current < 5 && (
-        <h1 className={classes.loading}>Loading...</h1>
+        <h2 className={classes.loading}>Loading...</h2>
       )}
       <ul>
         {storagedmeals.map((meal) => (

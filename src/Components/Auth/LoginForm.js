@@ -78,7 +78,7 @@ function LoginForm() {
   let content;
 
   if (status === "pending" && !error && !data) {
-    content = <h1>Sending request...</h1>;
+    content = <h2>Sending request...</h2>;
   }
 
   if (status === null || error) {
