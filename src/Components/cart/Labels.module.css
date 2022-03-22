@@ -1,0 +1,26 @@
+.labels__Horizontal {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.labels__Vertical {
+    display: flex;
+
+    flex-direction: column;
+  }
+  
+
+.labels__label {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+  
+}
+.labels__span {
+
+    font-size: 1.5rem;
+
+}
+

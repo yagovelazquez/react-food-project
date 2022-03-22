@@ -1,0 +1,40 @@
+
+  
+  .control {
+    margin-bottom: 0.5rem;
+  }
+  
+  .control label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    display: block;
+    text-align: center;
+  }
+  
+  .control input {
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .control input[disabled] {
+    background-color: #5a1a014b;
+  }
+  
+  .control label[disabled] {
+    color: #5a1a014b;
+  }
+  
+
+  .invalid label {
+    color: #ca3e51;
+  }
+  
+
+  .invalid input {
+    background-color: #ffeff1;
+    border-color: #aa0b20;
+  }
+
